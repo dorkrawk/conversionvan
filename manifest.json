@@ -1,0 +1,16 @@
+{
+	"name": "Conversion Van",
+	"version": "0.1",
+	"description": "Conversion Van automatically converts measurements to the units that you want.",
+	"homepage_url": "http://www.dinosaurseateverybody.com",
+	"options_page": "options.html",
+	"content_scripts": [
+		{
+			"matches": ["http://*/*"],
+			"run_at": "document_end",
+			"js": ["jquery-1.7.1.min.js","convert.js"],
+			"css": ["conversionvan.css"]
+		}
+	],
+	"permissions": ["http://*/*"]
+}
